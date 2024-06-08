@@ -1,7 +1,12 @@
 import Image from "next/image";
 import CountUp from 'react-countup';
+import { useRouter } from 'next/navigation';
 
 const About = () => {
+  const router = useRouter();
+  const handleNavigate=()=>{
+    router.push('#services')
+  }
   return (
     <section className="text-gray-600 body-font " id="about">
       <div className=" p-12 mx-auto  ">
@@ -87,7 +92,8 @@ const About = () => {
                 interested in SEO, have Web Development ideas, or require a
                 graphic designer who can match your goals.
               </p>
-              <button className="inline-flex text-blue-900 hover:text-white border-2 border-blue-900 py-2 px-8 focus:outline-none hover:bg-blue-900 rounded-full text-base mt-5">
+              <button onClick={handleNavigate}
+              className="inline-flex text-blue-900 hover:text-white border-2 border-blue-900 py-2 px-8 focus:outline-none hover:bg-blue-900 rounded-full text-base mt-5">
                 Learn More
               </button>
             </div>

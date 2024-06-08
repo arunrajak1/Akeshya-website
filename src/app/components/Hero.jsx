@@ -1,8 +1,13 @@
 import Image from 'next/image';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { useRouter } from 'next/navigation';
 
 const Hero =()=>{
+  const router = useRouter();
+  const handleNavigate=()=>{
+    router.push('#about')
+  }
    return (
 <section className="text-gray-600 body-font  ">
   <div className=" mx-auto flex px-20 py-24 sm:py-5 sm:flex-col-reverse md:flex-col-reverse lg:flex-row items-center ">
@@ -11,7 +16,8 @@ const Hero =()=>{
       </h1>
       <p className="mb-8  sm:text-lg  md:text-2xl text-start lg:text-2xl mt-2 leading-relaxed "  data-aos="fade-up" data-aos-duration="400">We are team of talented website designers, developers & digital marketeers</p>
       <div className="flex justify-start" data-aos="fade-up" data-aos-duration="800">
-        <button className="inline-flex text-blue-900 hover:text-white border-2 border-blue-900 py-2 px-8 focus:outline-none hover:bg-blue-900 rounded-full text-lg" >Get Started</button>
+        <button onClick={handleNavigate}
+        className="inline-flex text-blue-900 hover:text-white border-2 border-blue-900 py-2 px-8 focus:outline-none hover:bg-blue-900 rounded-full text-lg" >Get Started</button>
       </div>
     </div>
     <div className="lg:w-5/6 md:w-1/2 sm:w-5/6  w-5/6 sm:p-5"   data-aos="fade-left"  data-aos-duration="200">
