@@ -99,7 +99,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col md:flex-col lg:flex-row md:w-5/6 lg:w-5/6 w-full">
+        <div className="flex flex-col md:flex-col lg:flex-row md:w-5/6 lg:w-5/6 w-5/6">
           <div
             className="w-full rounded-lg overflow-hidden mt-6 sm:py-5 lg:py-10 md:py-10 flex justify-center p-10 sm:p-0"
             data-aos="fade-right"
