@@ -31,7 +31,7 @@ const Header = () => {
 
     const handleResize = () => {
       // Check if the screen width is small or medium
-      setIsSmallOrMediumScreen(window.innerWidth < 768);
+      setIsSmallOrMediumScreen(window.innerWidth < 960);
     };
 
     window.addEventListener('scroll', handleScroll);
